@@ -22,7 +22,7 @@
   </head>
   <!-- Làm cách nào để cho nội dung tự auto cách đều 2 bên mà không phải fixed padding left, right?-->
   <!-- Làm cách nào để cho header full màn hình?-->
-  <body class="flex flex-col items-center">
+  <body class="flex flex-col items-center w-full">
     <!-- Header: Start -->
     <header
       class="flex justify-center fixed top-0 w-full z-[9999] backdrop-blur-md bg-white/80"
@@ -62,7 +62,7 @@
     <!-- Header: End -->
     <!-- Herobanner: Start -->
     <div class="overflow-hidden">
-      <!-- Làm cách nào để khi xuống màn hình 768px text H1 không bị sát biên? -->
+      <!-- Làm cách nào để khi xuống màn hình 768px text H1 không bị sát biên? done -->
       <!-- Làm cách nào để khi responsive nội dung vẫn ở giữa mà không bị lệch sang bên trái -->
       <div class="container max-w-[1110px] py-16">
         <div class="flex flex-col items-center gap-8 pt-[168px]">
@@ -249,7 +249,7 @@
           </div>
           <div class="flex flex-col gap-7 mb-9">
             <div class="flex flex-col items-center">
-              <!-- Làm thế nào để có thể tạo ra gap âm trong tailwind -->
+              <!-- Làm thế nào để có thể tạo ra gap âm trong tailwind (co dap an)-->
               <div class="px-10 py-10 rounded-xl bg-white gap-2">
                 <div class="H5 text-center pb-2">Intuitive Design</div>
                 <div class="B2 text-center text-[#18191F]">
@@ -392,7 +392,7 @@
         <img class="mx-auto mt-14" src="/Hieu-on-internet/mockup/ios1.svg" />
       </div>
       <div class="col-span-3 flex flex-col justify-center gap-8 px-12">
-        <!-- Làm thể nào để content vô giữ mà không phải dùng padding cố định? -->
+        <!-- Làm thể nào để content vô giữ mà không phải dùng padding cố định? co dap an -->
         <div class="H3">Headline</div>
         <div class="L1">
           The headline of our new mobile application encapsulates its purpose in
@@ -422,5 +422,133 @@
       </div>
     </div>
     <!-- Section 7: End -->
+    <!-- Section 8: Start -->
+    <div class="container max-w-[1110px] my-[209px]">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 bg-[#8C30F5] rounded-2xl px-12 py-10 gap-8"
+      >
+        <div class="flex flex-col">
+          <div class="H3 text-white">Headline</div>
+          <div class="L1 text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum
+            diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem
+            egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non.
+            Non commodo volutpat, pharetra, vel.
+          </div>
+          <div class="flex gap-2">
+            <div class="label-lg text-white">Get started</div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#FFF"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="flex justify-center relative">
+          <img
+            class="md:absolute left-1/2 top-1/2 md:-translate-x-1/2 md:-translate-y-1/2"
+            src="/Hieu-on-internet/mockup/ios2.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Section 8: End -->
+    <!-- Footer: Start -->
+    <div class="w-screen flex flex-col items-center pt-24 bg-[#0B0D17] relative">
+      <div class="container max-w-[1110px]">
+        <div class="grid grid-cols-4 gap-[30px] pb-20">
+          <div class="flex flex-col gap-6">
+            <img
+              class="w-[120px] h-8"
+              src="/Hieu-on-internet/logo/Landify-footer.svg"
+            />
+            <div class="text-sm font-normal leading-6 text-white">
+              Experience the future of seamless productivity with our
+              cutting-edge landing page application, designed to elevate your
+              online presence and convert visitors into loyal customers.
+            </div>
+            <div class="flex items-start gap-4">
+              <img src="/Hieu-on-internet/icon/ins.svg" />
+              <img src="/Hieu-on-internet/icon/dri.svg" />
+              <img src="/Hieu-on-internet/icon/X.svg" />
+              <img src="/Hieu-on-internet/icon/you.svg" />
+            </div>
+          </div>
+          <div class="flex flex-col gap-6">
+            <div class="H6">Quick Links</div>
+            <div class="flex flex-col gap-3 B2 text-white">
+              <div>Portfolio</div>
+              <div>Blogs</div>
+              <div>About</div>
+              <div>Press</div>
+              <div class="flex gap-2">
+                <span class="B2 text-white">Careers</span>
+                <span class="BL"> we're hiring</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-6">
+            <div class="H6">Services</div>
+            <div class="flex flex-col gap-3 B2 text-white">
+              <div>UX/UI Design</div>
+              <div>App Development</div>
+              <div>Web Development</div>
+              <div>Quality Assurance</div>
+              <div>Machine Learning</div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-6">
+            <div class="H6">Reach us</div>
+            <div class="flex flex-col gap-3 B2 text-white">
+              <div class="flex items-center gap-2">
+                <img src="/Hieu-on-internet/icon/email.svg" />
+                <div>hello@landify.co</div>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="/Hieu-on-internet/icon/phone.svg" />
+                <div>+91 98765 43210</div>
+              </div>
+              <div class="flex items-start gap-2">
+                <img src="/Hieu-on-internet/icon/location.svg" />
+                <div>
+                  772 Lyonwood Ave <br />
+                  Walnut, CA 91789
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-[30px] B2 text-white py-6">
+          <div class="mr-auto">© 2020 Landify UI Kit. All rights reserved</div>
+          <div class="flex items-center gap-2 ml-auto">
+            <div>Terms & Conditions</div>
+            <div>|</div>
+            <div>Privacy Policy</div>
+            <div>|</div>
+            <div>Sitemap</div>
+            <div>|</div>
+            <div>Disclaimer</div>
+          </div>
+        </div>
+      </div>
+      <!-- <div>
+        <img
+          class="w-[500px] h-[calc(100%+30px)] opacity-5 absolute right-0 top-0 -mt-[14px] translate-x-1/2"
+          src="/Hieu-on-internet/logo/Footer.svg"
+          alt=""
+        />
+      </div> -->
+    </div>
+    <!-- Footer: End -->
   </body>
 </html>
