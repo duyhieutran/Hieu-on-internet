@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hieu on internet</title>
+    <title>INDEX</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -12,42 +12,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lexend+Deca:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lexend+Deca:wght@100&family=Nanum+Pen+Script&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Nanum+Pen+Script&display=swap"
       rel="stylesheet"
     />
   </head>
-  <!-- Làm cách nào để cho nội dung tự auto cách đều 2 bên mà không phải fixed padding left, right?-->
-  <!-- Làm cách nào để cho header full màn hình?-->
   <body class="flex flex-col items-center w-full">
     <!-- Header: Start -->
     <header
-      class="flex justify-center fixed top-0 w-full z-[9999] backdrop-blur-md bg-white/80"
+      class="flex justify-center items-centerfixed top-0 w-full z-[9999] backdrop-blur-md bg-white/80 h-16"
     >
-      <nav class="container max-w-[1110px] flex items-center h-[72px]">
-        <div class="flex items-center gap-8 mr-auto">
+      <nav class="container flex">
+        <div class="flex items-center gap-8 mx-auto">
           <img
-            class="mx-auto my-auto"
             class="mx-auto my-auto"
             src="/Hieu-on-internet/logo/Landify.svg"
           />
-          <div class="label-md">About</div>
-          <div class="label-md">Products</div>
-          <div class="label-md">Pricing</div>
-          <div class="label-md">Blog</div>
-          <div class="label-md">Jobs</div>
-          <div class="flex items-start gap-1">
-            <div class="label-md">More</div>
+          <div>About</div>
+          <div>Products</div>
+          <div>Pricing</div>
+          <div>Blog</div>
+          <div>Jobs</div>
+          <div class="flex gap-1">
+            <div>More</div>
             <img
               class="mx-auto my-auto"
               src="/Hieu-on-internet/icon/chevron_down.svg"
             />
           </div>
         </div>
-        <div class="flex items-start gap-3 ml-auto">
+        <div class="flex gap-3 mx-auto">
           <img
             class="mx-auto my-auto"
             src="/Hieu-on-internet/badge/google.svg"
@@ -61,71 +54,70 @@
     </header>
     <!-- Header: End -->
     <!-- Herobanner: Start -->
-    <div class="overflow-hidden">
-      <!-- Làm cách nào để khi xuống màn hình 768px text H1 không bị sát biên? done -->
-      <!-- Làm cách nào để khi responsive nội dung vẫn ở giữa mà không bị lệch sang bên trái -->
-      <div class="container max-w-[1110px] py-16">
-        <div class="flex flex-col items-center gap-8 pt-[168px]">
-          <div class="H1 text-center">
-            Track your product sales from anywhere, anytime.
-          </div>
-          <button
-            class="px-8 py-3 items-center label-lg rounded-md bg-purple-600 text-white"
-          >
-            Start selling
-          </button>
+    <div class="container flex flex-col items-center">
+      <div class="flex flex-col items-center gap-8 pt-24">
+        <div class="H1 gray-900 text-center">
+          Track your product sales from anywhere, anytime.
         </div>
-        <div class="flex flex-col items-center mt-[94px]">
-          <img
-            class="mx-auto my-auto top-0 drop-shadow-2xl"
-            src="/Hieu-on-internet/mockup/ios.svg"
-          />
-          <div class="h-[170px] overflow-hidden mt-[154px] absolute -z-10">
-            <div class="w-[1200px] h-[1200px] bg-purple-400 rounded-full"></div>
-          </div>
+        <button class="px-8 py-3 label-lg rounded-md purple text-white">
+          Start selling
+        </button>
+      </div>
+      <div class="flex flex-col items-center mt-[94px]">
+        <img
+          class="mx-auto my-auto top-0 drop-shadow-2xl"
+          src="/Hieu-on-internet/mockup/ios.svg"
+        />
+        <div class="h-[170px] mt-[154px] overflow-hidden absolute -z-10">
+          <div class="w-[1200px] h-[1200px] purple-800 rounded-full"></div>
         </div>
       </div>
     </div>
     <!-- Herobanner: End -->
     <!-- Seciton 1: Start -->
-    <div
-      class="container max-w-[1110px] grid grid-cols-6 grid-rows-2 py-16 gap-[30px]"
-    >
-      <div class="col-span-2 row-span-2 flex flex-col gap-2">
+    <div class="container grid grid-cols-3 py-16 gap-[30px]">
+      <div class="flex flex-col gap-2 mx-auto gray-900">
         <div class="H2">1,500,000+</div>
         <div class="L1">
           Customers who use Landify UI Kit to build their new startup landing
           page.
         </div>
       </div>
-      <img class="mx-auto my-auto" src="/Hieu-on-internet/logo/Airbnb.svg" />
-      <img class="mx-auto my-auto" src="/Hieu-on-internet/logo/Amazon.svg" />
-      <img class="mx-auto my-auto" src="/Hieu-on-internet/logo/FedEx.svg" />
-      <img class="mx-auto my-auto" src="/Hieu-on-internet/logo/Microsoft.svg" />
-      <img class="mx-auto my-auto" src="/Hieu-on-internet/logo/Google.svg" />
-      <img class="mx-auto my-auto" src="/Hieu-on-internet/logo/OLA.svg" />
-      <img class="mx-auto my-auto" src="/Hieu-on-internet/logo/Walmart.svg" />
-      <img class="mx-auto my-auto" src="/Hieu-on-internet/logo/OYO.svg" />
+      <div class="col-span-2 grid grid-cols-4">
+        <img class="mx-auto my-auto" src="/Hieu-on-internet/logo/Airbnb.svg" />
+        <img class="mx-auto my-auto" src="/Hieu-on-internet/logo/Amazon.svg" />
+        <img class="mx-auto my-auto" src="/Hieu-on-internet/logo/FedEx.svg" />
+        <img
+          class="mx-auto my-auto"
+          src="/Hieu-on-internet/logo/Microsoft.svg"
+        />
+        <img class="mx-auto my-auto" src="/Hieu-on-internet/logo/Google.svg" />
+        <img class="mx-auto my-auto" src="/Hieu-on-internet/logo/OLA.svg" />
+        <img class="mx-auto my-auto" src="/Hieu-on-internet/logo/Walmart.svg" />
+        <img class="mx-auto my-auto" src="/Hieu-on-internet/logo/OYO.svg" />
+      </div>
     </div>
     <!-- Section 1: End -->
     <!-- Section 2: Start -->
-    <div class="container max-w-[1110px] py-16 flex flex-col gap-12">
-      <div class="grid grid-cols-12">
-        <div class="col-start-4 col-span-6">
-          <div class="H2 text-center pb-2">Tailor-made features</div>
-          <div class="L1 text-center justify-self-center">
+    <div class="container flex flex-col py-16 gap-12">
+      <div class="grid grid-cols-4 gap-[30px] gray-900 text-center">
+        <div class="col-start-2 col-span-2">
+          <div class="H2">Tailor-made features</div>
+          <div class="L1">
             Customized functionalities are designed to precisely fit the
             specific requirements and preferences of users or entities, ensuring
             a uniquely tailored solution.
           </div>
         </div>
       </div>
-      <div class="grid grid-cols-3 grid-rows-2 gap-x-[30px] gap-y-16">
+      <div
+        class="grid grid-cols-3 grid-rows-2 gap-x-[30px] gap-y-16 gray-900 text-center"
+      >
         <div class="flex flex-col items-center gap-6">
           <img src="/Hieu-on-internet/icon/1.svg" />
           <div class="flex flex-col gap-2">
-            <div class="H5 text-center">Robust workflow</div>
-            <div class="B1 text-center">
+            <div class="H5">Robust workflow</div>
+            <div class="B1">
               A resilient, well-structured process ensures consistent and
               reliable operations even under challenging conditions.
             </div>
@@ -134,8 +126,8 @@
         <div class="flex flex-col items-center gap-6">
           <img src="/Hieu-on-internet/icon/2.svg" />
           <div class="flex flex-col gap-2">
-            <div class="H5 text-center">Flexibility</div>
-            <div class="B1 text-center">
+            <div class="H5">Flexibility</div>
+            <div class="B1">
               The system's adaptability empowers it to effortlessly respond to
               diverse needs, ensuring versatile and dynamic performance.
             </div>
@@ -144,8 +136,8 @@
         <div class="flex flex-col items-center gap-6">
           <img src="/Hieu-on-internet/icon/3.svg" />
           <div class="flex flex-col gap-2">
-            <div class="H5 text-center">User friendly</div>
-            <div class="B1 text-center">
+            <div class="H5">User friendly</div>
+            <div class="B1">
               The interface is intuitively designed, making it accessible and
               straightforward for people of all backgrounds.
             </div>
@@ -154,8 +146,8 @@
         <div class="flex flex-col items-center gap-6">
           <img src="/Hieu-on-internet/icon/4.svg" />
           <div class="flex flex-col gap-2">
-            <div class="H5 text-center">Multiple layouts</div>
-            <div class="B1 text-center">
+            <div class="H5">Multiple layouts</div>
+            <div class="B1">
               The software offers a versatile array of arrangement options,
               catering to diverse user interface preferences.
             </div>
@@ -164,8 +156,8 @@
         <div class="flex flex-col items-center gap-6">
           <img src="/Hieu-on-internet/icon/5.svg" />
           <div class="flex flex-col gap-2">
-            <div class="H5 text-center">Better components</div>
-            <div class="B1 text-center">
+            <div class="H5">Better components</div>
+            <div class="B1">
               Enhancing the system's performance, the improved parts
               significantly contribute to its overall efficiency and
               reliability.
@@ -175,8 +167,8 @@
         <div class="flex flex-col items-center gap-6">
           <img src="/Hieu-on-internet/icon/6.svg" />
           <div class="flex flex-col gap-2">
-            <div class="H5 text-center">Well organised</div>
-            <div class="B1 text-center">
+            <div class="H5">Well organised</div>
+            <div class="B1">
               The meticulously structured arrangement exemplifies an efficient
               and orderly system for optimized productivity and clarity.
             </div>
@@ -186,47 +178,44 @@
     </div>
     <!-- Section 2: End -->
     <!-- Section 3: Start -->
-    <div class="w-screen flex flex-col items-center py-16 bg-slate-100">
-      <div class="container max-w-[1110px] flex flex-col gap-10">
-        <div class="grid grid-cols-12">
-          <div class="col-start-4 col-span-6">
-            <div class="H2 text-center pb-2">Our Clients Speak</div>
-            <div class="L1 text-center justify-self-center">
+    <div class="flex justify-center w-full bg-slate-100">
+      <div class="container flex flex-col py-16 gap-10">
+        <div class="grid grid-cols-4 text-center gray-900">
+          <div class="col-start-2 col-span-2 gap-2">
+            <div class="H2">Our Clients Speak</div>
+            <div class="L1">
               We have been working with clients around the world
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-3 gap-x-[30px]">
-          <div class="flex flex-col gap-7 mb-9">
-            <div class="flex flex-col items-center">
-              <div class="px-10 py-10 rounded-xl bg-white gap-2">
-                <div class="H5 text-center pb-2">Efficient Collaborating</div>
-                <div class="B2 text-center text-[#18191F]">
+        <div class="grid grid-cols-3 gap-[30px]">
+          <div>
+            <div class="flex flex-col items-center gray-900 text-center">
+              <div class="px-10 py-10 rounded-xl bg-white">
+                <div class="H5 pb-2">Efficient Collaborating</div>
+                <div class="B2">
                   Streamlined teamwork facilitates synergy, fostering effective
                   cooperation to achieve shared goals and optimize productivity.
                 </div>
               </div>
               <img src="/Hieu-on-internet/icon/arrow-down.svg" />
             </div>
-
-            <div class="flex flex-col items-center gap-2">
+            <div class="flex flex-col items-center gap-2 text-center py-7">
               <img
                 class="w-14 rounded-full"
                 src="/Hieu-on-internet/img/avt1.png"
               />
-              <div class="flex flex-col items-center">
-                <div class="S1 text-center">James Davis</div>
-                <div class="B2 text-center text-[#474A57]">
-                  Founder at B Agency
-                </div>
+              <div>
+                <div class="S1 gray-900">James Davis</div>
+                <div class="B2 gray-800">Founder at B Agency</div>
               </div>
             </div>
           </div>
-          <div class="flex flex-col gap-7 mb-9">
-            <div class="flex flex-col items-center">
-              <div class="px-10 py-10 rounded-xl bg-white gap-2">
-                <div class="H5 text-center pb-2">Intuitive Design</div>
-                <div class="B2 text-center text-[#18191F]">
+          <div>
+            <div class="flex flex-col items-center gray-900 text-center">
+              <div class="px-10 py-10 rounded-xl bg-white">
+                <div class="H5 pb-2">Intuitive Design</div>
+                <div class="B2">
                   The user-friendly layout effortlessly guides users,
                   simplifying their interaction with the interface for enhanced
                   usability.
@@ -234,42 +223,36 @@
               </div>
               <img src="/Hieu-on-internet/icon/arrow-down.svg" />
             </div>
-            <div class="flex flex-col items-center gap-2">
+            <div class="flex flex-col items-center gap-2 text-center py-7">
               <img
                 class="w-14 rounded-full"
                 src="/Hieu-on-internet/img/avt2.png"
               />
-              <div class="flex flex-col items-center">
-                <div class="S1 text-center">Benjamin Williams</div>
-                <div class="B2 text-center text-[#474A57]">
-                  Designer at B Agency
-                </div>
+              <div>
+                <div class="S1 gray-900">Benjamin Williams</div>
+                <div class="B2 gray-800">Designer at B Agency</div>
               </div>
             </div>
           </div>
-          <div class="flex flex-col gap-7 mb-9">
-            <div class="flex flex-col items-center">
-              <!-- Làm thế nào để có thể tạo ra gap âm trong tailwind (co dap an)-->
-              <div class="px-10 py-10 rounded-xl bg-white gap-2">
-                <div class="H5 text-center pb-2">Intuitive Design</div>
-                <div class="B2 text-center text-[#18191F]">
-                  The user-friendly layout effortlessly guides users,
-                  simplifying their interaction with the interface for enhanced
-                  usability.
+          <div>
+            <div class="flex flex-col items-center gray-900 text-center">
+              <div class="px-10 py-10 rounded-xl bg-white">
+                <div class="H5 pb-2">Mindblowing Service</div>
+                <div class="B2">
+                  The service offered leaves a lasting impression with its
+                  exceptional quality and attention to detail.
                 </div>
               </div>
               <img src="/Hieu-on-internet/icon/arrow-down.svg" />
             </div>
-            <div class="flex flex-col items-center gap-2">
+            <div class="flex flex-col items-center gap-2 text-center py-7">
               <img
                 class="w-14 rounded-full"
                 src="/Hieu-on-internet/img/avt3.png"
               />
-              <div class="flex flex-col items-center">
-                <div class="S1 text-center">Nicholas Thompson</div>
-                <div class="B2 text-center text-[#474A57]">
-                  Content Writer at B Agency
-                </div>
+              <div>
+                <div class="S1 gray-900">Nicholas Thompson</div>
+                <div class="B2 gray-800">Content Writer at B Agency</div>
               </div>
             </div>
           </div>
@@ -278,67 +261,73 @@
     </div>
     <!-- Section 3: End -->
     <!-- Section 4: Start -->
-    <div class="container max-w-[1110px] py-16 flex flex-col gap-12">
-      <div class="grid grid-cols-2 gap-x-[30px]">
+    <div class="container flex flex-col py-16 gap-12 gray-900">
+      <div class="grid grid-cols-2 gap-9">
         <div class="H3">Enter the world of all fashion trends</div>
         <div class="L1">
           Step into the vibrant realm of all fashion trends and discover a
-          kaleidoscope of styles and expressions waiting to be embraced.
+          kaleidoscope of styles and expressions waiting to be embraced. From
+          timeless classics to cutting-edge innovations, this world offers
+          endless possibilities for self-expression through fashion.
         </div>
       </div>
       <img src="/Hieu-on-internet/img/bg.png" />
     </div>
     <!-- Section 4: End -->
     <!-- Section 5: Start -->
-    <div class="w-screen flex flex-col items-center py-16 bg-[#D5FAFC]">
-      <div class="container max-w-[1110px] flex flex-col gap-12">
-        <div class="H2">Some of my recent work</div>
-        <div class="grid grid-cols-4 grid-rows-2 gap-x-[30px] gap-y-16">
-          <div class="col-span-2 flex flex-col gap-4">
-            <div class="rounded-lg bg-[#A0DCFF]">
+    <div class="flex justify-center w-full turquoise-100 gray-900">
+      <div class="container py-16">
+        <div class="H2 pb-12">Some of my recent work</div>
+        <div class="grid grid-cols-2 grid-rows-2 gap-x-[30px] gap-y-16">
+          <div class="flex flex-col gap-4">
+            <div class="rounded-lg cyan">
               <img
                 class="mx-auto mt-12"
                 src="/Hieu-on-internet/mockup/ios3.svg"
               />
             </div>
-            <div class="flex flex-col gap-2">
-              <div class="H5">iOS Application</div>
+            <div>
+              <div class="H5 pb-2">iOS Application</div>
               <div class="B1">iOS, IoT</div>
             </div>
           </div>
-          <div class="col-span-2 flex flex-col gap-4">
-            <div class="rounded-lg bg-[#FFC3D8]">
+          <div class="flex flex-col gap-4">
+            <div class="rounded-lg candy">
               <img
                 class="mx-auto mt-12"
                 src="/Hieu-on-internet/mockup/android.svg"
               />
             </div>
-            <div class="flex flex-col gap-2">
-              <div class="H5">Android Application</div>
+            <div>
+              <div class="H5 pb-2">Android Application</div>
               <div class="B1">Android, IoT</div>
             </div>
           </div>
-          <div class="col-span-2 flex flex-col gap-4">
-            <div class="rounded-lg bg-[#FDD9D9]">
-              <img
-                class="ml-20 my-6"
-                src="/Hieu-on-internet/mockup/macbook.svg"
-              />
+          <div class="flex flex-col gap-4">
+            <div class="w-full h-full rounded-lg peach">
+              <div class="relative">
+                <img
+                  class="absolute right-0 my-6"
+                  src="/Hieu-on-internet/mockup/macbook.svg"
+                />
+              </div>
             </div>
-            <div class="flex flex-col gap-2">
-              <div class="H5">Dashboard</div>
+            <div>
+              <div class="H5 pb-2">Dashboard</div>
               <div class="B1">Web app</div>
             </div>
           </div>
-          <div class="col-span-2 flex flex-col gap-4">
-            <div class="rounded-lg bg-[#FDD9D9]">
-              <img
-                class="ml-20 my-6"
-                src="/Hieu-on-internet/mockup/macbook.svg"
-              />
+          <div class="flex flex-col gap-4">
+            <div class="w-full h-full rounded-lg purple-100">
+              <div class="relative">
+                <img
+                  class="absolute right-0 my-6"
+                  src="/Hieu-on-internet/mockup/macbook.svg"
+                />
+              </div>
             </div>
-            <div class="flex flex-col gap-2">
-              <div class="H5">Dashboard</div>
+            <div>
+              <div class="H5 pb-2">Dashboard</div>
               <div class="B1">Web app</div>
             </div>
           </div>
@@ -347,38 +336,38 @@
     </div>
     <!-- Section 5: End -->
     <!-- Section 6: Start -->
-    <div class="container max-w-[1110px] grid grid-cols-12 py-16 gap-x-[30px]">
-      <div class="col-span-6 flex flex-col gap-2">
-        <div class="H2">Our 18 years of achievements</div>
+    <div class="container grid grid-cols-8 gap-[30px] py-16 gray-900">
+      <div class="col-span-3">
+        <div class="H2 pb-2">Our 18 years of achievements</div>
         <div class="L1">With our super powers we have reached this</div>
       </div>
-      <div class="col-span-3 flex flex-col gap-10">
+      <div class="col-start-5 col-span-2 flex flex-col gap-10">
         <div class="flex items-center gap-4">
           <img src="/Hieu-on-internet/icon/1.svg" />
-          <div class="flex flex-col">
+          <div>
             <div class="H4">10,000+</div>
             <div class="B1">Downloads per day</div>
           </div>
         </div>
         <div class="flex items-center gap-4">
           <img src="/Hieu-on-internet/icon/5.svg" />
-          <div class="flex flex-col">
+          <div>
             <div class="H4">500+</div>
             <div class="B1">clients</div>
           </div>
         </div>
       </div>
-      <div class="col-span-3 flex flex-col gap-10">
+      <div class="col-span-2 flex flex-col gap-10">
         <div class="flex items-center gap-4">
           <img src="/Hieu-on-internet/icon/4.svg" />
-          <div class="flex flex-col">
+          <div>
             <div class="H4">2 Million</div>
             <div class="B1">Users</div>
           </div>
         </div>
         <div class="flex items-center gap-4">
           <img src="/Hieu-on-internet/icon/7.svg" />
-          <div class="flex flex-col">
+          <div>
             <div class="H4">140</div>
             <div class="B1">Countries</div>
           </div>
@@ -387,12 +376,11 @@
     </div>
     <!-- Section 6: End -->
     <!-- Section 7: Start -->
-    <div class="container max-w-[1110px] py-16 grid grid-cols-6 gap-x-[30px]">
-      <div class="col-span-3 rounded-lg bg-[#F1E4FF]">
+    <div class="container grid grid-cols-2 py-16 gap-[30px]">
+      <div class="rounded-lg purple-100">
         <img class="mx-auto mt-14" src="/Hieu-on-internet/mockup/ios1.svg" />
       </div>
-      <div class="col-span-3 flex flex-col justify-center gap-8 px-12">
-        <!-- Làm thể nào để content vô giữ mà không phải dùng padding cố định? co dap an -->
+      <div class="flex flex-col justify-center gap-8 px-12 gray-900">
         <div class="H3">Headline</div>
         <div class="L1">
           The headline of our new mobile application encapsulates its purpose in
@@ -423,19 +411,17 @@
     </div>
     <!-- Section 7: End -->
     <!-- Section 8: Start -->
-    <div class="container max-w-[1110px] my-[209px]">
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 bg-[#8C30F5] rounded-2xl px-12 py-10 gap-8"
-      >
-        <div class="flex flex-col px-12 py-10 gap-8">
-          <div class="H3 text-white">Headline</div>
-          <div class="L1 text-white">
-            Experience the future of seamless productivity with our
-            cutting-edge landing page application, designed to elevate your
-            online presence and convert visitors into loyal customers.
+    <div class="container my-[209px] text-white">
+      <div class="grid grid-cols-1 md:grid-cols-2 purple rounded-2xl gap-8">
+        <div class="flex flex-col px-20 py-20 gap-8">
+          <div class="H3">Headline</div>
+          <div class="L1">
+            Experience the future of seamless productivity with our cutting-edge
+            landing page application, designed to elevate your online presence
+            and convert visitors into loyal customers.
           </div>
           <div class="flex gap-2">
-            <div class="label-lg text-white">Get started</div>
+            <div class="label-lg">Get started</div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -463,22 +449,20 @@
     </div>
     <!-- Section 8: End -->
     <!-- Footer: Start -->
-    <div
-      class="w-screen flex flex-col items-center pt-24 bg-[#0B0D17] relative"
-    >
-      <div class="container max-w-[1110px]">
-        <div class="grid grid-cols-4 gap-[30px] pb-20">
+    <div class="flex justify-center w-full black text-white relative">
+      <div class="container pt-24">
+        <div class="grid grid-cols-4 gap-16 pb-20">
           <div class="flex flex-col gap-6">
             <img
               class="w-[120px] h-8"
               src="/Hieu-on-internet/logo/Landify-footer.svg"
             />
-            <div class="text-sm font-normal leading-6 text-white">
+            <div class="B2">
               Experience the future of seamless productivity with our
               cutting-edge landing page application, designed to elevate your
               online presence and convert visitors into loyal customers.
             </div>
-            <div class="flex items-start gap-4">
+            <div class="flex gap-4">
               <img src="/Hieu-on-internet/icon/ins.svg" />
               <img src="/Hieu-on-internet/icon/dri.svg" />
               <img src="/Hieu-on-internet/icon/X.svg" />
@@ -487,20 +471,20 @@
           </div>
           <div class="flex flex-col gap-6">
             <div class="H6">Quick Links</div>
-            <div class="flex flex-col gap-3 B2 text-white">
+            <div class="flex flex-col gap-3 B2">
               <div>Portfolio</div>
               <div>Blogs</div>
               <div>About</div>
               <div>Press</div>
               <div class="flex gap-2">
-                <span class="B2 text-white">Careers</span>
+                <span class="B2">Careers</span>
                 <span class="BL"> we're hiring</span>
               </div>
             </div>
           </div>
           <div class="flex flex-col gap-6">
             <div class="H6">Services</div>
-            <div class="flex flex-col gap-3 B2 text-white">
+            <div class="flex flex-col gap-3 B2">
               <div>UX/UI Design</div>
               <div>App Development</div>
               <div>Web Development</div>
@@ -510,7 +494,7 @@
           </div>
           <div class="flex flex-col gap-6">
             <div class="H6">Reach us</div>
-            <div class="flex flex-col gap-3 B2 text-white">
+            <div class="flex flex-col gap-3 B2">
               <div class="flex items-center gap-2">
                 <img src="/Hieu-on-internet/icon/email.svg" />
                 <div>hello@landify.co</div>
@@ -529,7 +513,7 @@
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-2 gap-[30px] B2 text-white py-6">
+        <div class="grid grid-cols-2 gap-[30px] B2 py-6">
           <div class="mr-auto">© 2020 Landify UI Kit. All rights reserved</div>
           <div class="flex items-center gap-2 ml-auto">
             <div>Terms & Conditions</div>
@@ -543,12 +527,10 @@
         </div>
       </div>
       <div>
-        <img class="absolute top-0 right-0" src="/Hieu-on-internet/logo/Footer.png"/>
-        <!-- <img
-          class="w-[500px] h-[calc(100%+30px)] opacity-5 absolute right-0 top-0 -mt-[14px] translate-x-1/2"
-          src="/Hieu-on-internet/logo/Footer.svg"
-          alt=""
-        /> -->
+        <img
+          class="absolute top-0 right-0"
+          src="/Hieu-on-internet/logo/Footer.png"
+        />
       </div>
     </div>
     <!-- Footer: End -->
