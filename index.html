@@ -57,7 +57,7 @@
     <div class="container flex flex-col items-center">
       <div class="flex flex-col items-center gap-8 pt-24">
         <div class="H1 gray-900 text-center">
-          Track your product sales from anywhere, anytime.
+          Làm sao để dùng các class customize vào responsive md tailwind?
         </div>
         <button class="px-8 py-3 label-lg rounded-md purple text-white">
           Start selling
@@ -75,15 +75,15 @@
     </div>
     <!-- Herobanner: End -->
     <!-- Seciton 1: Start -->
-    <div class="container grid grid-cols-3 py-16 gap-[30px]">
-      <div class="flex flex-col gap-2 mx-auto gray-900">
+    <div class="container grid grid-cols-2 md:grid-cols-3 py-16 gap-[30px]">
+      <div class="col-span-2 md:col-span-1 md:flex flex-col gap-2 mx-auto gray-900 text-center md:text-left">
         <div class="H2">1,500,000+</div>
         <div class="L1">
           Customers who use Landify UI Kit to build their new startup landing
           page.
         </div>
       </div>
-      <div class="col-span-2 grid grid-cols-4">
+      <div class="col-span-2 grid grid-cols-2 gap-10 md:grid-cols-4">
         <img class="mx-auto my-auto" src="/Hieu-on-internet/logo/Airbnb.svg" />
         <img class="mx-auto my-auto" src="/Hieu-on-internet/logo/Amazon.svg" />
         <img class="mx-auto my-auto" src="/Hieu-on-internet/logo/FedEx.svg" />
@@ -100,7 +100,7 @@
     <!-- Section 1: End -->
     <!-- Section 2: Start -->
     <div class="container flex flex-col py-16 gap-12">
-      <div class="grid grid-cols-4 gap-[30px] gray-900 text-center">
+      <div class="flex flex-col md:grid md:grid-cols-4 gap-[30px] gray-900 text-center">
         <div class="col-start-2 col-span-2">
           <div class="H2">Tailor-made features</div>
           <div class="L1">
@@ -111,7 +111,7 @@
         </div>
       </div>
       <div
-        class="grid grid-cols-3 grid-rows-2 gap-x-[30px] gap-y-16 gray-900 text-center"
+        class="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 gap-x-[30px] gap-y-16 gray-900 text-center"
       >
         <div class="flex flex-col items-center gap-6">
           <img src="/Hieu-on-internet/icon/1.svg" />
@@ -180,7 +180,7 @@
     <!-- Section 3: Start -->
     <div class="flex justify-center w-full bg-slate-100">
       <div class="container flex flex-col py-16 gap-10">
-        <div class="grid grid-cols-4 text-center gray-900">
+        <div class="flex flex-col md:grid md:grid-cols-4 text-center gray-900">
           <div class="col-start-2 col-span-2 gap-2">
             <div class="H2">Our Clients Speak</div>
             <div class="L1">
@@ -188,7 +188,7 @@
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-3 gap-[30px]">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
           <div>
             <div class="flex flex-col items-center gray-900 text-center">
               <div class="px-10 py-10 rounded-xl bg-white">
@@ -262,7 +262,7 @@
     <!-- Section 3: End -->
     <!-- Section 4: Start -->
     <div class="container flex flex-col py-16 gap-12 gray-900">
-      <div class="grid grid-cols-2 gap-9">
+      <div class="md:grid md:grid-cols-2 gap-9 text-center md:text-left">
         <div class="H3">Enter the world of all fashion trends</div>
         <div class="L1">
           Step into the vibrant realm of all fashion trends and discover a
@@ -271,14 +271,14 @@
           endless possibilities for self-expression through fashion.
         </div>
       </div>
-      <img src="/Hieu-on-internet/img/bg.png" />
+      <img class="w-full h-full" src="/Hieu-on-internet/img/bg.png" />
     </div>
     <!-- Section 4: End -->
     <!-- Section 5: Start -->
-    <div class="flex justify-center w-full turquoise-100 gray-900">
+    <div class="flex justify-center w-full turquoise-100 gray-900 text-center md:text-left">
       <div class="container py-16">
         <div class="H2 pb-12">Some of my recent work</div>
-        <div class="grid grid-cols-2 grid-rows-2 gap-x-[30px] gap-y-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-x-[30px] gap-y-16">
           <div class="flex flex-col gap-4">
             <div class="rounded-lg cyan">
               <img
@@ -304,8 +304,8 @@
             </div>
           </div>
           <div class="flex flex-col gap-4">
-            <div class="w-full h-full rounded-lg peach">
-              <div class="relative">
+            <div class="w-[640px] h-[382px] md:w-full md:h-full rounded-lg purple-100 relative">
+              <div>
                 <img
                   class="absolute right-0 my-6"
                   src="/Hieu-on-internet/mockup/macbook.svg"
@@ -318,8 +318,8 @@
             </div>
           </div>
           <div class="flex flex-col gap-4">
-            <div class="w-full h-full rounded-lg purple-100">
-              <div class="relative">
+            <div class="w-[640px] h-[382px] md:w-full md:h-full rounded-lg purple-100 relative">
+              <div>
                 <img
                   class="absolute right-0 my-6"
                   src="/Hieu-on-internet/mockup/macbook.svg"
@@ -336,38 +336,38 @@
     </div>
     <!-- Section 5: End -->
     <!-- Section 6: Start -->
-    <div class="container grid grid-cols-8 gap-[30px] py-16 gray-900">
-      <div class="col-span-3">
+    <div class="container grid grid-cols-4 md:grid-cols-8 gap-[30px] py-16 gray-900">
+      <div class="col-span-4 md:col-span-3 text-center md:text-left">
         <div class="H2 pb-2">Our 18 years of achievements</div>
         <div class="L1">With our super powers we have reached this</div>
       </div>
-      <div class="col-start-5 col-span-2 flex flex-col gap-10">
-        <div class="flex items-center gap-4">
+      <div class="md:col-start-5 col-span-2 flex flex-col gap-10 text-center md:text-left">
+        <div class="flex flex-col md:grid md:grid-cols-6 items-center gap-2">
           <img src="/Hieu-on-internet/icon/1.svg" />
-          <div>
+          <div class="col-span-5">
             <div class="H4">10,000+</div>
             <div class="B1">Downloads per day</div>
           </div>
         </div>
-        <div class="flex items-center gap-4">
+        <div class="flex flex-col md:grid md:grid-cols-6 items-center gap-2">
           <img src="/Hieu-on-internet/icon/5.svg" />
-          <div>
+          <div class="col-span-5">
             <div class="H4">500+</div>
             <div class="B1">clients</div>
           </div>
         </div>
       </div>
-      <div class="col-span-2 flex flex-col gap-10">
-        <div class="flex items-center gap-4">
+      <div class="col-span-2 flex flex-col gap-10 text-center md:text-left">
+        <div class="flex flex-col md:grid md:grid-cols-6 items-center gap-2">
           <img src="/Hieu-on-internet/icon/4.svg" />
-          <div>
+          <div class="col-span-5">
             <div class="H4">2 Million</div>
             <div class="B1">Users</div>
           </div>
         </div>
-        <div class="flex items-center gap-4">
+        <div class="flex flex-col md:grid md:grid-cols-6 items-center gap-2">
           <img src="/Hieu-on-internet/icon/7.svg" />
-          <div>
+          <div class="col-span-5">
             <div class="H4">140</div>
             <div class="B1">Countries</div>
           </div>
@@ -376,7 +376,7 @@
     </div>
     <!-- Section 6: End -->
     <!-- Section 7: Start -->
-    <div class="container grid grid-cols-2 py-16 gap-[30px]">
+    <div class="container grid grid-cols-1 md:grid-cols-2 py-16 gap-[30px]">
       <div class="rounded-lg purple-100">
         <img class="mx-auto mt-14" src="/Hieu-on-internet/mockup/ios1.svg" />
       </div>
@@ -411,7 +411,7 @@
     </div>
     <!-- Section 7: End -->
     <!-- Section 8: Start -->
-    <div class="container my-[209px] text-white">
+    <div class="container py-16 md:my-[209px] text-white">
       <div class="grid grid-cols-1 md:grid-cols-2 purple rounded-2xl gap-8">
         <div class="flex flex-col px-20 py-20 gap-8">
           <div class="H3">Headline</div>
@@ -451,7 +451,7 @@
     <!-- Footer: Start -->
     <div class="flex justify-center w-full black text-white relative">
       <div class="container pt-24">
-        <div class="grid grid-cols-4 gap-16 pb-20">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-16 pb-20">
           <div class="flex flex-col gap-6">
             <img
               class="w-[120px] h-8"
@@ -513,9 +513,9 @@
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-2 gap-[30px] B2 py-6">
+        <div class="grid gird grid-cols-1 md:grid-cols-2 gap-[30px] B2 py-6">
           <div class="mr-auto">© 2020 Landify UI Kit. All rights reserved</div>
-          <div class="flex items-center gap-2 ml-auto">
+          <div class="flex items-center gap-2 md:ml-auto">
             <div>Terms & Conditions</div>
             <div>|</div>
             <div>Privacy Policy</div>
@@ -526,7 +526,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="hidden md:flex">
         <img
           class="absolute top-0 right-0"
           src="/Hieu-on-internet/logo/Footer.png"
