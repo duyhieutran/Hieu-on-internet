@@ -2,24 +2,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>INDEX</title>
+    <title>Hieu-on-internet</title>
     <link
       rel="icon"
       type="image/x-icon"
       href="/Hieu-on-internet/icon/favicon.ico"
     />
-    <link rel="stylesheet" href="/css/output.css" />
+    <link rel="stylesheet" href="output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Nanum+Pen+Script&display=swap"
       rel="stylesheet"
     />
+    <script src="animation.js"></script>
+    <script src="wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body class="flex flex-col items-center w-full">
     <!-- Header: Start -->
     <header
-      class="flex justify-center items-centerfixed top-0 w-full z-[9999] backdrop-blur-md bg-white/80 h-16"
+      class="hidden md:flex justify-center items-center fixed top-0 w-full z-[9999] backdrop-blur-md bg-white/80 h-16"
     >
       <nav class="container flex">
         <div class="flex items-center gap-8 mx-auto">
@@ -52,12 +61,56 @@
         </div>
       </nav>
     </header>
+    <div class="fixed top-0 right-0 p-8 md:hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6 cursor-pointer"
+        onclick="togglemenu()"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+    </div>
+    <div
+      class="flex flex-col items-end p-8 gap-4 fixed top-0 right-0 h-full w-64 md:hidden backdrop-blur-md bg-white/80 animate__animated animate__slideInRight"
+      id="mobilemenu"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6 cursor-pointer"
+        onclick="togglemenu()"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+      <div>About</div>
+      <div>Products</div>
+      <div>Pricing</div>
+      <div>Blog</div>
+      <div>Jobs</div>
+      <div>More</div>
+    </div>
     <!-- Header: End -->
     <!-- Herobanner: Start -->
     <div class="container flex flex-col items-center">
       <div class="flex flex-col items-center gap-8 pt-24">
         <div class="H1 gray-900 text-center">
-          Làm sao để dùng các class customize vào responsive md tailwind?
+          Track your product sales from anywhere, anytime.
+          <!-- Làm sao để dùng các class customize vào responsive md tailwind? -->
         </div>
         <button class="px-8 py-3 label-lg rounded-md purple text-white">
           Start selling
@@ -76,7 +129,9 @@
     <!-- Herobanner: End -->
     <!-- Seciton 1: Start -->
     <div class="container grid grid-cols-2 md:grid-cols-3 py-16 gap-[30px]">
-      <div class="col-span-2 md:col-span-1 md:flex flex-col gap-2 mx-auto gray-900 text-center md:text-left">
+      <div
+        class="col-span-2 md:col-span-1 md:flex flex-col gap-2 mx-auto gray-900 text-center md:text-left"
+      >
         <div class="H2">1,500,000+</div>
         <div class="L1">
           Customers who use Landify UI Kit to build their new startup landing
@@ -100,10 +155,14 @@
     <!-- Section 1: End -->
     <!-- Section 2: Start -->
     <div class="container flex flex-col py-16 gap-12">
-      <div class="flex flex-col md:grid md:grid-cols-4 gap-[30px] gray-900 text-center">
+      <div
+        class="flex flex-col md:grid md:grid-cols-4 gap-[30px] gray-900 text-center"
+      >
         <div class="col-start-2 col-span-2">
-          <div class="H2">Tailor-made features</div>
-          <div class="L1">
+          <div class="H2 wow animate__animated animate__slideInUp">
+            Tailor-made features
+          </div>
+          <div class="L1 wow animate__animated animate__slideInUp">
             Customized functionalities are designed to precisely fit the
             specific requirements and preferences of users or entities, ensuring
             a uniquely tailored solution.
@@ -113,7 +172,9 @@
       <div
         class="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 gap-x-[30px] gap-y-16 gray-900 text-center"
       >
-        <div class="flex flex-col items-center gap-6">
+        <div
+          class="flex flex-col items-center gap-6 wow animate__animated animate__slideInUp"
+        >
           <img src="/Hieu-on-internet/icon/1.svg" />
           <div class="flex flex-col gap-2">
             <div class="H5">Robust workflow</div>
@@ -123,7 +184,9 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col items-center gap-6">
+        <div
+          class="flex flex-col items-center gap-6 wow animate__animated animate__slideInUp"
+        >
           <img src="/Hieu-on-internet/icon/2.svg" />
           <div class="flex flex-col gap-2">
             <div class="H5">Flexibility</div>
@@ -133,7 +196,9 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col items-center gap-6">
+        <div
+          class="flex flex-col items-center gap-6 wow animate__animated animate__slideInUp"
+        >
           <img src="/Hieu-on-internet/icon/3.svg" />
           <div class="flex flex-col gap-2">
             <div class="H5">User friendly</div>
@@ -143,7 +208,9 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col items-center gap-6">
+        <div
+          class="flex flex-col items-center gap-6 wow animate__animated animate__slideInUp"
+        >
           <img src="/Hieu-on-internet/icon/4.svg" />
           <div class="flex flex-col gap-2">
             <div class="H5">Multiple layouts</div>
@@ -153,7 +220,9 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col items-center gap-6">
+        <div
+          class="flex flex-col items-center gap-6 wow animate__animated animate__slideInUp"
+        >
           <img src="/Hieu-on-internet/icon/5.svg" />
           <div class="flex flex-col gap-2">
             <div class="H5">Better components</div>
@@ -164,7 +233,9 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col items-center gap-6">
+        <div
+          class="flex flex-col items-center gap-6 wow animate__animated animate__slideInUp"
+        >
           <img src="/Hieu-on-internet/icon/6.svg" />
           <div class="flex flex-col gap-2">
             <div class="H5">Well organised</div>
@@ -181,7 +252,9 @@
     <div class="flex justify-center w-full bg-slate-100">
       <div class="container flex flex-col py-16 gap-10">
         <div class="flex flex-col md:grid md:grid-cols-4 text-center gray-900">
-          <div class="col-start-2 col-span-2 gap-2">
+          <div
+            class="col-start-2 col-span-2 gap-2 wow animate__animated animate__fadeInUpBig"
+          >
             <div class="H2">Our Clients Speak</div>
             <div class="L1">
               We have been working with clients around the world
@@ -189,7 +262,7 @@
           </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
-          <div>
+          <div class="wow animate__animated animate__fadeInUpBig">
             <div class="flex flex-col items-center gray-900 text-center">
               <div class="px-10 py-10 rounded-xl bg-white">
                 <div class="H5 pb-2">Efficient Collaborating</div>
@@ -211,7 +284,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="wow animate__animated animate__fadeInUpBig">
             <div class="flex flex-col items-center gray-900 text-center">
               <div class="px-10 py-10 rounded-xl bg-white">
                 <div class="H5 pb-2">Intuitive Design</div>
@@ -234,7 +307,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="wow animate__animated animate__fadeInUpBig">
             <div class="flex flex-col items-center gray-900 text-center">
               <div class="px-10 py-10 rounded-xl bg-white">
                 <div class="H5 pb-2">Mindblowing Service</div>
@@ -263,23 +336,32 @@
     <!-- Section 4: Start -->
     <div class="container flex flex-col py-16 gap-12 gray-900">
       <div class="md:grid md:grid-cols-2 gap-9 text-center md:text-left">
-        <div class="H3">Enter the world of all fashion trends</div>
-        <div class="L1">
+        <div class="H3 wow animate__animated animate__fadeInLeft">
+          Enter the world of all fashion trends
+        </div>
+        <div class="L1 wow animate__animated animate__fadeInRight">
           Step into the vibrant realm of all fashion trends and discover a
           kaleidoscope of styles and expressions waiting to be embraced. From
           timeless classics to cutting-edge innovations, this world offers
           endless possibilities for self-expression through fashion.
         </div>
       </div>
-      <img class="w-full h-full" src="/Hieu-on-internet/img/bg.png" />
+      <img
+        class="w-full h-full wow animate__animated animate__fadeIn"
+        src="/Hieu-on-internet/img/bg.png"
+      />
     </div>
     <!-- Section 4: End -->
     <!-- Section 5: Start -->
-    <div class="flex justify-center w-full turquoise-100 gray-900 text-center md:text-left">
+    <div
+      class="flex justify-center w-full turquoise-100 gray-900 text-center md:text-left"
+    >
       <div class="container py-16">
         <div class="H2 pb-12">Some of my recent work</div>
-        <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-x-[30px] gap-y-16">
-          <div class="flex flex-col gap-4">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-x-[30px] gap-y-16"
+        >
+          <div class="flex flex-col gap-4 wow animate__animated animate__slideInUp">
             <div class="rounded-lg cyan">
               <img
                 class="mx-auto mt-12"
@@ -291,7 +373,7 @@
               <div class="B1">iOS, IoT</div>
             </div>
           </div>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4 wow animate__animated animate__slideInUp">
             <div class="rounded-lg candy">
               <img
                 class="mx-auto mt-12"
@@ -303,8 +385,10 @@
               <div class="B1">Android, IoT</div>
             </div>
           </div>
-          <div class="flex flex-col gap-4">
-            <div class="w-[640px] h-[382px] md:w-full md:h-full rounded-lg purple-100 relative">
+          <div class="flex flex-col gap-4 wow animate__animated animate__slideInUp">
+            <div
+              class="w-[640px] h-[382px] md:w-full md:h-full rounded-lg purple-100 relative"
+            >
               <div>
                 <img
                   class="absolute right-0 my-6"
@@ -318,7 +402,9 @@
             </div>
           </div>
           <div class="flex flex-col gap-4">
-            <div class="w-[640px] h-[382px] md:w-full md:h-full rounded-lg purple-100 relative">
+            <div
+              class="w-[640px] h-[382px] md:w-full md:h-full rounded-lg purple-100 relative wow animate__animated animate__slideInUp"
+            >
               <div>
                 <img
                   class="absolute right-0 my-6"
@@ -336,12 +422,16 @@
     </div>
     <!-- Section 5: End -->
     <!-- Section 6: Start -->
-    <div class="container grid grid-cols-4 md:grid-cols-8 gap-[30px] py-16 gray-900">
-      <div class="col-span-4 md:col-span-3 text-center md:text-left">
+    <div
+      class="container grid grid-cols-4 md:grid-cols-8 gap-[30px] py-16 gray-900"
+    >
+      <div class="col-span-4 md:col-span-3 text-center md:text-left wow animate__animated animate__fadeInRight">
         <div class="H2 pb-2">Our 18 years of achievements</div>
         <div class="L1">With our super powers we have reached this</div>
       </div>
-      <div class="md:col-start-5 col-span-2 flex flex-col gap-10 text-center md:text-left">
+      <div
+        class="md:col-start-5 col-span-2 flex flex-col gap-10 text-center md:text-left wow animate__animated animate__fadeInRight"
+      >
         <div class="flex flex-col md:grid md:grid-cols-6 items-center gap-2">
           <img src="/Hieu-on-internet/icon/1.svg" />
           <div class="col-span-5">
@@ -357,7 +447,7 @@
           </div>
         </div>
       </div>
-      <div class="col-span-2 flex flex-col gap-10 text-center md:text-left">
+      <div class="col-span-2 flex flex-col gap-10 text-center md:text-left wow animate__animated animate__fadeInRight">
         <div class="flex flex-col md:grid md:grid-cols-6 items-center gap-2">
           <img src="/Hieu-on-internet/icon/4.svg" />
           <div class="col-span-5">
@@ -377,10 +467,10 @@
     <!-- Section 6: End -->
     <!-- Section 7: Start -->
     <div class="container grid grid-cols-1 md:grid-cols-2 py-16 gap-[30px]">
-      <div class="rounded-lg purple-100">
+      <div class="rounded-lg purple-100 wow animate__animated animate__fadeInLeft">
         <img class="mx-auto mt-14" src="/Hieu-on-internet/mockup/ios1.svg" />
       </div>
-      <div class="flex flex-col justify-center gap-8 px-12 gray-900">
+      <div class="flex flex-col justify-center gap-8 px-12 gray-900 wow animate__animated animate__fadeInLeft">
         <div class="H3">Headline</div>
         <div class="L1">
           The headline of our new mobile application encapsulates its purpose in
@@ -411,7 +501,7 @@
     </div>
     <!-- Section 7: End -->
     <!-- Section 8: Start -->
-    <div class="container py-16 md:my-[209px] text-white">
+    <div class="container py-16 md:my-[209px] text-white wow animate__animated animate__fadeInRight">
       <div class="grid grid-cols-1 md:grid-cols-2 purple rounded-2xl gap-8">
         <div class="flex flex-col px-20 py-20 gap-8">
           <div class="H3">Headline</div>
@@ -454,7 +544,7 @@
         <div class="grid grid-cols-1 md:grid-cols-4 gap-16 pb-20">
           <div class="flex flex-col gap-6">
             <img
-              class="w-[120px] h-8"
+              class="w-[120px] h-8 wow animate__animated animate__shakeX"
               src="/Hieu-on-internet/logo/Landify-footer.svg"
             />
             <div class="B2">
@@ -528,7 +618,7 @@
       </div>
       <div class="hidden md:flex">
         <img
-          class="absolute top-0 right-0"
+          class="absolute top-0 right-0 wow animate__animated animate__headShake"
           src="/Hieu-on-internet/logo/Footer.png"
         />
       </div>
